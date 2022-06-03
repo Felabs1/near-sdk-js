@@ -29,7 +29,7 @@ export declare function jsvmAccountId(): any;
 export declare function jsvmJsContractName(): any;
 export declare function jsvmMethodName(): any;
 export declare function jsvmArgs(): any;
-export declare function jsvmStorageWrite(key: any, value: any): boolean;
+export declare function jsvmStorageWrite(key: string, value: string): boolean;
 export declare function jsvmStorageRead(key: any): any;
 export declare function jsvmStorageRemove(key: any): boolean;
 export declare function jsvmStorageHasKey(key: any): boolean;

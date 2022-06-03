@@ -161,7 +161,8 @@ export function jsvmArgs() {
     return env.read_register(0)
 }
 
-export function jsvmStorageWrite(key, value) {
+// TODO seems like runtime takes string, but this should probably be bytes
+export function jsvmStorageWrite(key: string, value: string) {
     let exist = env.jsvm_storage_write(key, value, EVICTED_REGISTER)
     if (exist === 1n) {
         return true
